@@ -47,4 +47,15 @@ public class LoginStepDefinitions {
         System.out.println(firstRow.get(0));
         System.out.println(firstRow.get(1));
     }
+
+    @When("User enter credentials using below table")
+    public void userEnterCredentialsUsingBelowTable(DataTable dataTable){
+        List<Map<String,String>> table = dataTable.asMaps(String.class,String.class);
+        //[{"st","pwd"}, {"un","pwd"}]
+        System.out.println(table.size());
+        System.out.println(table.get(0));
+        System.out.println(table.get(0).get("username"));
+        System.out.println(table.get(0).get("password"));
+        System.out.println(table.get(0).get("passcode"));
+    }
 }
