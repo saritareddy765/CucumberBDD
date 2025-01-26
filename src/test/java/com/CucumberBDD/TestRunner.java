@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         // copy path from Source root of package
         glue = "com/CucumberBDD",
         plugin ="pretty",
-       tags = "@LT2"
+       tags = "@LT3"
        //dryRun = true,
        // monochrome = true
 
