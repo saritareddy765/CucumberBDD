@@ -12,10 +12,12 @@ public class Hooks {
     }
     @Before
     public static void beforeEveyScenario(Scenario scenario){
-        System.out.println(scenario.getName());
+        // System.out.println(scenario.getName());
+        System.out.println("For Every Scenario/Test");
     }
     @BeforeStep
     public static void beforeEveryStep(Scenario scenario){
-        System.out.println(scenario.getLine());
+       // System.out.println(scenario.getLine());
+        System.out.println("For EveryStep");
     }
 }

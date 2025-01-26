@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         // copy path from Source root of package
         glue = "com/CucumberBDD",
-        plugin = "pretty"
+        plugin ="pretty",
+       tags = "@LT2"
        //dryRun = true,
        // monochrome = true
 
